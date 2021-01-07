@@ -75,7 +75,6 @@ nav .wrapper{
 .nav-links .drop{
     background-color: #242526;
     width: 150px;
-    top: 65px;
     line-height: 50px;
     position: absolute;
     transition: all 0.3s ease-in;
@@ -105,7 +104,6 @@ nav .wrapper{
 .nav-links .mega-box{
     width: 100%;
     position: absolute;
-    top: 65px;
     left: 0;
     transition: all 0.3s ease-in;
     /* Hidden */
@@ -120,7 +118,7 @@ nav .wrapper{
     padding: 25px 50px;
 }
 
-.content .row{ 
+.content .row{
     width: calc(20% - 30px);
     line-height: 50px;
     /* background-color: blueviolet; */
@@ -164,6 +162,10 @@ input{
 }
 
 label{
+  cursor: pointer;
+}
+
+.mbtn{
     position: absolute;
     right: 5%;
     top: 2%;
@@ -215,7 +217,6 @@ label i{
         position: static;
         opacity: 1;
         visibility: visible;
-        top: 65px;
         padding-left: 20px;
         width: 100%;
         /* Hidden */
@@ -223,8 +224,8 @@ label i{
         overflow: hidden;
     }
 
-    .nav-links li:hover .drop,
-    .nav-links li:hover .mega-box{
+    #service:checked ~ .nav-links .drop,
+    #categories:checked ~ .nav-links .mega-box{
         max-height: 100%;
     }
 
