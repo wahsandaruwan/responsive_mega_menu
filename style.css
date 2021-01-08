@@ -17,9 +17,9 @@ li{
     font-size: 1rem;
 }
 
-/* ----Navigation---- */
+/* Navigation */
 nav{
-    background-color: #242526;
+    background-color: #c0392b;
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -29,11 +29,11 @@ nav{
 
 nav .wrapper{
     max-width: 1250px;
-    padding: 0px 30px;
     margin: auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
 }
 
 /* Logo */
@@ -42,11 +42,11 @@ nav .wrapper{
     background-color: #fff;
     height: 40px;
     line-height: 40px;
-    padding: 0px 20px;
+    padding: 0 20px;
 }
 
 .logo span{
-    background-color: #000;
+    background-color: #1a1a1a;
     color: #fff;
     padding: 0 10px;
 }
@@ -54,8 +54,8 @@ nav .wrapper{
 /* Menu Items */
 .wrapper .nav-links{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-links > li{
@@ -73,7 +73,7 @@ nav .wrapper{
 
 /* Drop Down Menu */
 .nav-links .drop{
-    background-color: #242526;
+    background-color: #c0392b;
     width: 150px;
     line-height: 50px;
     position: absolute;
@@ -92,10 +92,10 @@ nav .wrapper{
 }
 
 .drop li a:hover{
-    background-color: #1a1b1b;
+    background-color: #1a1a1a;
 }
 
-.nav-links li:hover .drop{
+.nav-links > li:hover .drop{
     opacity: 1;
     visibility: visible;
 }
@@ -112,7 +112,7 @@ nav .wrapper{
 }
 
 .mega-box .content{
-    background-color: #242526;
+    background-color: #c0392b;
     display: flex;
     justify-content: space-evenly;
     padding: 25px 50px;
@@ -121,7 +121,6 @@ nav .wrapper{
 .content .row{
     width: calc(20% - 30px);
     line-height: 50px;
-    /* background-color: blueviolet; */
 }
 
 .row img{
@@ -133,9 +132,9 @@ nav .wrapper{
 }
 
 .row header{
-    color: #f2f2f2;
+    color: #fff;
     font-size: 1rem;
-    border-bottom: 1px solid #f2f2f2;
+    border-bottom: 1px solid #fff;
 }
 
 .row .mega-links li a{
@@ -144,14 +143,13 @@ nav .wrapper{
     display: block;
     padding-left: 20px;
     transition: all 0.3s ease-in;
-    /* background-color: #4b9292; */
 }
 
 .row .mega-links li a:hover{
     background-color: #1a1a1a;
 }
 
-.nav-links li:hover .mega-box{
+.nav-links > li:hover .mega-box{
     opacity: 1;
     visibility: visible;
 }
@@ -162,7 +160,7 @@ input{
 }
 
 label{
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .mbtn{
@@ -174,13 +172,13 @@ label{
 
 label i{
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
 /* ----Responsive---- */
 @media(max-width: 1000px){
-    /* logo */
+    /* Logo */
     .wrapper .logo{
         position: fixed;
         top: 12px;
@@ -189,7 +187,7 @@ label i{
     /* Menu Items */
     .wrapper .nav-links{
         position: fixed;
-        background-color: #242526;
+        background-color: #c0392b;
         height: 100vh;
         width: 100%;
         max-width: 350px;
@@ -197,7 +195,7 @@ label i{
         top: 0;
         left: -100%;
         line-height: 70px;
-        overflow-x: auto;
+        overflow-y: auto;
         transition: all 0.3s ease-in;
     }
 
@@ -211,7 +209,7 @@ label i{
         font-size: 1.1rem;
     }
 
-    /* Drop Down & Mega Menu */
+    /* Drop Down & Mega menu */
     .nav-links .drop,
     .nav-links .mega-box{
         position: static;
@@ -231,7 +229,6 @@ label i{
 
     .mega-box .content{
         flex-direction: column;
-        justify-content: center;
     }
 
     .content .row{
@@ -244,7 +241,7 @@ label i{
     }
 
     #show-mbtn:checked ~ .nav-links{
-        left: 0%;
+        left: 0;
     }
 
     #show-mbtn:checked ~ .sbtn{
